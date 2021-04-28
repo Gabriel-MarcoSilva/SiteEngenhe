@@ -1,0 +1,125 @@
+body{
+    background-color:#A60A43;
+    min-height: 500px;
+
+}
+
+#titulo{
+    font-size: 50pt;
+}
+#titulo:hover{
+    transition: 3s;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    color: #73072E;
+    font-size:25pt;
+    margin-top: -10px;
+    max-height: 50px;
+}
+ul{
+    position: absolute;
+    height: 50px;
+    padding: 5px;
+}
+li{
+    font-style: italic;
+    text-align: center;
+    font-size: 25px;
+	display: inline-table;
+    padding: 5px;
+}
+li:hover{
+    transition:0.5s;
+    background-color: #a60f55;
+}
+#corpo{
+    width: auto;
+    max-width: 1500px;
+    height:auto;
+    min-height: 500px; 
+    background-color:rgba(255,255,255,0.8);
+}
+#cabecalho{
+    background-color: #73072E;
+    height: 50px;
+}
+#boas_vindas{
+    font-style: italic;
+    font-size: 180pt;
+    text-align: center;
+    color:#a60f55;
+    text-shadow: 1px 2px black;
+}
+a{
+	color: white;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+
+#meio{
+    height: auto;
+    min-height: 500px;
+    max-width: 1480px;
+    
+    margin-top: 20px;
+    background-image:url(./imagens/WhatsApp\ Image\ 2021-04-27\ at\ 17.26.46.jpeg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#rodape{
+    text-align: center;
+    min-height: 100px;
+}
+p{
+    font-size: 23px;
+    padding: 50px;
+    text-align: justify;
+    
+}
+
+.configura{
+    margin: auto;
+}
+
+#paragrafo, #linktexto{
+    margin-top: 40px;
+    line-height: 1.5;
+    color: #73072E;
+}
+
+#outromeio{
+    background-color: rgba(255,255,255,0.9);
+    max-width: 1000px;
+    height: auto;
+    min-height: 500px;
+    margin-top:50px;
+    margin-bottom: 20px;
+}
+
+#containner{
+    width: 200px;
+    padding: 20px;
+    display: inline-grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-gap:10px;
+    margin:20px;
+}
+
+.quadro{
+    padding:50px;
+    background-color: #a60f55;
+    text-align: center;
+    color: white;
+}
+
+#visao:hover, #missao:hover, #valores:hover{
+    color:black;
+}

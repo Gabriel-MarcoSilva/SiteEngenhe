@@ -4,17 +4,16 @@ body{
 }
 #titulo{
     font-size: 50pt;
+    margin-top: 10px;
+    max-height: 50px;
 }
 #titulo:hover{
     transition: 3s;
     color: white;
 }
-
 h1{
     text-align: center;
     font-size:25pt;
-    margin-top: -10px;
-    max-height: 50px;
     color:  #73072E;
 }
 ul{
@@ -58,7 +57,6 @@ a{
 a:hover{
 	text-decoration: underline;
 }
-
 #meio{
     height: auto;
     min-height: 500px;
@@ -70,6 +68,10 @@ a:hover{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+#info{
+    line-height: 1.5;
+    font-family: Verdana, sans-serif;
+}
 p{
     font-size: 23px;
     padding: 50px;
@@ -79,6 +81,7 @@ p{
     font-size: 23px;
     text-align: center;
     min-height: 70px;
+
 }
 .configura{
     margin: auto;
@@ -89,45 +92,167 @@ p{
     color: #73072E;
 }
 #outromeio{
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255,255,255,0.8);
     max-width: 1000px;
     height: auto;
     min-height: 500px;
     margin-top:50px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 #containner{
-    width: 200px;
+    width: 950px;
     padding: 20px;
-    display: inline-grid;
-    grid-template-columns: auto auto auto;
-    grid-gap:10px;
-    margin:20px;
+    display: grid;
+    grid-gap:60px;
 }
-.quadro{
-    padding:50px;
+#quadro{
     min-width: 200px;
-    background-color: #a60f55;
+    width: 950px;
+    border: 3px solid #73072E;
     text-align: center;
+    background-color: rgba(166,15,85, 0.7);
     color: white;
+}
+.lado1{
+    text-align: right;
+    background-color: #73072E;
+    margin-top: -50px;
+    margin-left: 820px;
+    color: white;
+    width: max-content;
+}
+.lado2{
+    text-align: left;
+    background-color: #73072E;
+    width: max-content;
+    color: white;
+    margin-top: -52px;
+    margin-left: 20px;
+}
+#containnerDiretor{
+    width: 950px;
+    display: grid;
+    grid-row-gap: 50px;
+    margin-top:50px;
+    margin-bottom: 50px;;
+    border: 3px solid #73072E;
+}
+.equipe{
+    height: 300px;
+}
+#equipe{
+    width: auto;
+}
+#quadrado{
+    border-radius:100%;
+    height: 250px;
+    width: 250px;
+    margin-bottom: 20px;
+}
+#logo{
+    width: 25px;
+    height: 25px;
+    border-radius: 80%;
+}
+#figure{
+    width: 250px;
+    padding: 0px;
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 15pt;
+    text-shadow: 1px 1px white;
 }
 #visao:hover, #missao:hover, #valores:hover{
     text-shadow: 1px 1px 1px black;
+}
+#conquista{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    margin-top: -60px;
+    border: 3px solid #73072E;
+}
+#containnerIndex{
+    width: 950px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-row-gap: 50px;
+}
+#noticia{
+    border: 3px solid #73072E;
+    background-color: rgba(166,15,85, 0.6);
+    width: auto;
+}
+.logo_eng{
+    display: block;
+    position:relative;
+    width: 100px;
+    margin-bottom: -60px;
+    left: 399px;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 50%;
+}
+#logo_eng:hover{
+    width: 150px;
+    transition: 0.2s;
+}
+#logo_noticia{
+    margin-left: -400px;
+}
+#containnerContato{
+    border-radius: 5%;
+    margin-top: 60px;
+    width: 550px;
+    border: 3px solid #73072E;
+    background-color: #a60f55;
+    color: white;
+}
+.geral{
+    border:#73072E solid 2px;
+    margin: 30px;
+    padding: 20px;
 }
 
 @media (max-width: 1000px) {
 
     #containner{
-        width: 300px;
+        width: auto;
+        max-width: 800px;
         display: grid;
-        grid-gap: 50px;
-        margin: auto;
+        grid-gap: 70px;
         grid-template-columns: auto;
     }
-    .quadro{
-        min-height: 500px;
+    #quadro{
+        max-width: 500px;
+        font-size: 16pt;
+    }
+    .lado1{
+        margin-top: -50px;
+        margin-left: 380px;
     }
     #titulo{
         font-size: 40pt;
+    }
+    .equipe{
+        width: 150px;
+        height: 200px;
+    }
+    #quadrado{
+        width: 150px;
+        height: 150px;
+    }
+    #equipe{
+        grid-gap: 50px;
+        display: inline;
+        grid-template-columns: auto;
+    }
+    #figure{
+        width:200px;
+        font-size: 11pt;
+    }
+    p{
+        font-size: 15px;
     }
 }
